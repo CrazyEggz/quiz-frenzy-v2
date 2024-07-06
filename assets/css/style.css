@@ -1,0 +1,136 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+}
+
+/* Welcome Page */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff9ef;
+    font-family: "Balsamiq Sans", sans-serif;
+    text-align: center;
+    color: #434343;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 30px;
+    font-weight: 700;
+}
+
+.speech-bubble > p {
+    margin: 10px;
+}
+
+.speech-bubble {
+    width: 450px;
+    min-height: 100px;
+    max-width: calc(100vw - 20px);
+    border: 3px solid #f65035;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 12px;
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 40px;
+}
+
+.speech-bubble::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 20px solid #f65035;
+    border-left: 20px solid #f65035;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    bottom: -40px;
+    left: 100px;
+}
+
+.speech-bubble::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 20px solid #fff9ef;
+    border-left: 20px solid #fff9ef;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    bottom: -33px;
+    left: 103px;
+}
+
+#eyes-container {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.eye {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f9cdcc;
+    margin: 0 20px;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.eye::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #3845ad;
+}
+
+#name-input-container {
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    margin-top: 10vh;
+    border: none;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.3);
+    background-color: #f9cdcc;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+}
+
+#name-input-container input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    margin: 0px 20px;
+    height: 100%;
+}
+
+#name-input-container input:focus {
+    outline: none;
+}
+
+#name-input-button {
+	background: none;
+	color: #3845ad;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+    font-size: xx-large;
+}
+
+#name-input-button:hover {
+    color: #3846adc0;
+}
