@@ -172,3 +172,26 @@ h1 {
     border: none;
     box-shadow: 2px 2px 2px gray;
 }
+
+/* Animations */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(-5px);
+    }
+    50% {
+        transform: translate(5px);
+    }
+    75% {
+        transform: translate(-5px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
